@@ -1,0 +1,37 @@
+#newBooks {
+  padding: 100px 0;
+  font-family: 'Public Sans', sans-serif;
+  .container {
+    .newBooks {
+      &--title {
+        font-size: 40px;
+        color: #19272E;
+        text-align: center;
+        padding-top: 40px;
+      }
+      &--group{
+        padding-top: 100px;
+      }
+      &--group{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &__card{
+          text-align: start;
+          &--text{
+            width: 190px;
+            font-size: 20px;
+            color: #19272E;
+            padding: 8px 0;
+          }
+          &--span{
+            color: #19272E;
+            font-size: 18px;
+
+          }
+        }
+      }
+    }
+  }
+}
+

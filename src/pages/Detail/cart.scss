@@ -1,0 +1,116 @@
+#detail{
+  .detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .detail--texts{
+      margin-top: 50px;
+      .p1{
+        font-family: 'Public Sans',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #19272E;
+        opacity: 0.7;
+        margin-top: 20px;
+
+      }
+      .p2{
+        width: 340px;
+        height: 100px;
+        font-family: 'Public Sans',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #19272E;
+        margin: 40px 0;
+      }
+      .p3{
+        font-family: 'Public Sans',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: -0.3px;
+        color: #818EEA;
+        flex: none;
+        order: 2;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 20px 0;
+      }
+    }
+    img{
+      margin: 150px 20px 0 0;
+    }
+    .detail--texts__title{
+      display: flex;
+
+      .detail--texts__titles{
+        .title{
+          display: flex;
+        }
+        display: flex;
+        align-items: center;
+        img{
+          margin-left: 20px;
+        }
+      }
+
+      h1{
+        margin-top: 100px;
+        width: 300px;
+        height: 44px;
+        font-family: 'Public Sans',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: #19272E;
+
+      }
+      .heart{
+        width: 20px;
+
+
+      }
+      .vector{
+        width: 20px;
+
+      }
+    }
+    .add{
+      display: flex;
+
+      button{
+        background: #818EEA;
+        border-radius: 8px;
+        font-family: 'Public Sans',sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        padding: 2px 80px;
+        width: 350px;
+        height: 50px;
+      }
+      .addCard{
+        display: flex;
+        justify-content: space-around;
+        width: 120px;
+        height: 50px;
+        border: 1px solid #818EEA;
+        align-items: center;
+        margin-left: 20px;
+        border-radius: 10px;
+        color: #818EEA;
+        h3{
+          color: black;
+        }
+      }
+    }
+  }
+}
+

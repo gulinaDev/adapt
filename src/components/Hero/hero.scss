@@ -1,0 +1,45 @@
+#hero {
+  padding: 100px 0;
+  position: relative;
+  top: 100px;
+  font-family: 'Public Sans', sans-serif;
+  text-align: center;
+  background: url("../../img/Main image.png") no-repeat center/cover;
+  min-height: 50vh;
+
+  .hero {
+    padding-top: 2px;
+    &--tittle {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 8rem;
+      font-weight: 700;
+      font-size: 48px;
+      color: white;
+    }
+
+    &--text {
+      padding-top: 20px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #hero{
+    .container{
+      .hero{
+        &--tittle{
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 968px) {
+
+}

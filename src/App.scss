@@ -1,0 +1,31 @@
+@import "components/Header/header";
+@import "components/Hero/hero";
+@import "components/Genres/genres";
+@import "components/NewBooks/newbooks";
+@import "components/Books/books";
+@import "components/About/about";
+@import "components/Footer/footer";
+@import url('https://fonts.googl eapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;1,100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@500;600;900&family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import "pages/AllBooks/allbooks";
+@import "pages/Carts/detail";
+@import "pages/Detail/cart";
+@import url('https://fonts.googl eapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;1,100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@500;600;900&family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
