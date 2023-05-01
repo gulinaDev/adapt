@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 import {FaSearch} from "react-icons/fa";
-import {RiShoppingBagLine} from "react-icons/ri";
+// import {RiShoppingBagLine} from "react-icons/ri";
+// import {IoBagSharp} from "react-icons/io";
+import {BsFillBagFill} from "react-icons/bs";
 
 
 const Header = () => {
@@ -38,8 +40,8 @@ const Header = () => {
                             }
                             }/>
                         </div>
-                        <Link to="/detail"><RiShoppingBagLine className="header--inputs__bags"/></Link>
-
+                        {/*<Link to="/cart"><RiShoppingBagLine className="header--inputs__bags"/></Link>*/}
+                        <Link to={"/yourcart"}><BsFillBagFill className="header--inputs__bags"/></Link>
                     </div>
                 </div>
             </div>

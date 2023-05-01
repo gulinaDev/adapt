@@ -1,7 +1,13 @@
 
 import {data} from "../../data/product";
+import {useEffect, useState} from "react";
 
 const AllBooks = () => {
+    const [tab,setTab] = useState('first')
+
+    useEffect(()=>{
+        setTab('first')
+    },[])
     return (
         <div id="allBooks">
             <div className="container">
@@ -11,9 +17,6 @@ const AllBooks = () => {
                             <h1>All Books</h1>
                             <p>Here you can find all the books you need</p>
                         </div>
-
-
-
                         <div className="allBooks--title__select">
                             <div className="allBooks--title__select--filter">
                                 <h3>Filters  </h3>
@@ -26,17 +29,39 @@ const AllBooks = () => {
                                     <option value=""> <span>Sort By</span>Top</option>
                                 </select>
                             </div>
+
+
+
+
                         </div>
                         <div className="">
                             <h3>Genres</h3>
                             <div className="allBooks">
                                 <div className="allBooks--title__right--input">
                                     <input type="radio" id="autographed" name="autographed"/>
-                                    <label htmlFor="autographed">Autographed Books</label> <br/>
+                                    <label htmlFor="autographed" onClick={() =>setTab("first")}
+                                    style={{
+                                       borderBottom: tab !== "first" && "none"
+                                    }}
+                                    >Autographed Books</label> <br/>
+
+
+
                                     <input type="radio" id="autographed" name="autographed"/>
-                                    <label htmlFor="autographed">Sci-Fi</label> <br/>
+                                    <label htmlFor="autographed" onClick={() =>setTab("second")}
+                                           style={{
+                                               color: tab !== "second" && "none"
+                                           }}>Sci-Fi</label> <br/>
+
+
                                     <input type="radio" id="autographed" name="autographed"/>
-                                    <label htmlFor="autographed">For kids</label> <br/>
+                                    <label htmlFor="autographed" onClick={() =>setTab("third")}
+                                           style={{
+                                               color: tab !== "first" && "none"
+                                           }}>For kids</label> <br/>
+
+
+
                                     <input type="radio" id="autographed" name="autographed"/>
                                     <label htmlFor="autographed">For teenagers</label> <br/>
                                     <input type="radio" id="autographed" name="autographed"/>
@@ -57,7 +82,8 @@ const AllBooks = () => {
                                     <label htmlFor="autographed">Religion</label> <br/>
                                 </div>
                                 <div className="allBooks--img">
-                                    {data.filter(el =>{
+                                    {
+                                        data.filter(el =>{
                                         if (el.type === "Religion"){
                                             return el
                                         }else if (el.type === "Sci-Fi"){
@@ -69,12 +95,16 @@ const AllBooks = () => {
                                             return el
                                         }else if (el.type === "Finance"){
                                             return el
-                                        }else if (el.type === " Detective"){
+                                        }else if (el.type === "Detective"){
                                             return el
                                         }else if (el.type === "Romantic"){
                                             return el
+                                        }else if (el.type === "Educational"){
+                                            return  el
+                                        }else if (el.type === "Self-Improvement"){
+                                            return el
                                         }else{
-                                            return  ""
+                                            return ""
                                         }
                                     }).map(el =>{
                                         return <div className="images">
@@ -86,8 +116,6 @@ const AllBooks = () => {
                                     }
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,8 @@ import AllBooks from "./pages/AllBooks";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Detail from "./pages/Detail";
-import Cart from "./pages/Detail";
+import Tabs from "./components/Tabs";
+import YourCart from "./pages/YourCart";
 
 
 
@@ -18,6 +19,7 @@ function App() {
     return (
         <div className="App">
            <Header/>
+            {/*<Tabs/>*/}
             <Routes>
                 <Route path={"/"} element={<Hero/>}/>
                 <Route path={"/about"} element={<About/>}/>
@@ -25,8 +27,9 @@ function App() {
                 <Route path={"/genres"} element={<Genres/>}/>
                 <Route path={"/newbooks"} element={<NewBooks/>}/>
                 <Route path={"/allbooks"} element={<AllBooks/>}/>
-                <Route path={"/cart"} element={<Cart/>}/>
+                {/*<Route path={"/cart"} element={<Cart/>}/>*/}
                 <Route path={"/detail"} element={<Detail/>}/>
+                <Route path={"/yourcart"} element={<YourCart/>}/>
             </Routes>
             <Footer/>
         </div>

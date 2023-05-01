@@ -1,0 +1,184 @@
+#card {
+  padding-top: 100px;
+  .container {
+    width: 90%;
+    .card {
+      &--title {
+        &__text {
+          font-size: 36px;
+          color: #19272E;
+        }
+
+        &__desc {
+          display: flex;
+          padding: 4px;
+
+          &--span {
+            font-size: 17px;
+            color: #19272E;
+          }
+
+          a {
+            color: #818EEA;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            padding-left: 8px;
+          }
+        }
+      }
+
+      &--block {
+        display: flex;
+        align-items: flex-start;
+
+
+        &__group {
+          padding-top: 32px;
+          display: flex;
+          flex-direction: column;
+
+          &--text {
+            padding-bottom: 30px;
+            display: flex;
+
+            &__image {
+              img {
+                width: 170px;
+              }
+            }
+
+            &__about {
+              padding: 0 40px;
+              display: flex;
+
+              &--base {
+                display: flex;
+                flex-direction: column;
+
+                &__total {
+                  width: 285px;
+                  font-size: 16px;
+                  color: #19272E;
+                }
+
+                &__frame {
+                  font-size: 14px;
+                  color: #19272E;
+                  padding: 8px 0;
+                }
+
+                &__cart{
+               padding-top: 130px;
+                  &--text{
+                    font-size: 16px;
+                    color: #19272E;
+                  }
+                  &--span{
+                    padding: 4px 0;
+                    color: #5c6ac9;
+                  }
+                }
+              }
+
+              &--remove {
+                padding: 1px 30px;
+                text-decoration-line: underline;
+                font-size: 14px;
+                color: #FF0000;
+              }
+            }
+          }
+          &--text:first-child(2){
+            margin: 10px 0;
+          }
+          &--line{
+            width: 576px;
+            height: 0;
+            border: 1px solid #818EEA;
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+            margin-top: 10px;
+          }
+        }
+
+
+
+
+
+
+
+        &__frame {
+          padding: 59px 30px;
+          &--text {
+            font-size: 22px;
+            color: #19272E;
+          }
+
+          &--desc {
+            &__base {
+              display: flex;
+              justify-content: space-between;
+              padding: 20px 0;
+              &--title{
+                font-size: 14px;
+                color: black;
+
+              }
+              &--span{
+                border: 2px solid #818EEA;
+                border-radius: 8px;
+                padding: 10px;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.3px;
+                color: #818EEA;
+                outline: none;
+                &__icon{
+                  padding-left: 4px;
+                  font-size: 15px;
+                  color: blue;
+                }
+              }
+            }
+            &__line{
+              margin-top: 15px;
+              width: 402px;
+              height: 0;
+              border: 1px solid #19272E;
+              flex: none;
+              order: 2;
+            }
+            &__total{
+              display: flex;
+              justify-content: space-between;
+             padding:20px 0;
+              &--span{
+                font-size: 15px;
+                color: black;
+              }
+              &--title{
+                color: #818EEA;
+              }
+            }
+            &__btn{
+              margin-top: 30px;
+              Width:397px;
+              Height:50px;
+              background: #818EEA;
+              border-radius: 8px;
+              border: none;
+              color: white;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
